@@ -1,0 +1,35 @@
+#about {
+margin-top: 125px;
+}
+
+#home {
+  margin-top: 100px;
+}
+
+.about-icon {
+  max-width: 20%;
+  height: auto;
+}
+.about-me-hr {
+  background-color: #0000002a;
+  height: 1px;
+  margin-top: 15px;
+}
+
+
+.profile-picture {
+  max-width: 75%;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .contact-nav-btn {
+    border: 0px solid !important;
+  }
+  .profile-picture {
+    width: 40%;
+  }  
+ 
+  }
+  

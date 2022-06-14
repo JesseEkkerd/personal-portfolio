@@ -1,2 +1,2 @@
 # Personal-Portfolio-Page
-My personal website hosted on jekkerd.com.
+My personal website to be hosted on jekkerd.com.

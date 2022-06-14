@@ -17,6 +17,17 @@
   margin-top: 15px;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,40,49, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .profile-picture {
   max-width: 75%;
 }
@@ -31,6 +42,30 @@
 .scrolled-up {
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+
+body.dark .fab {
+  color: #f5f5f7;
+}
+
+body.dark .wordpress-icon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(93%) saturate(0%) hue-rotate(247deg) brightness(106%) contrast(96%);
+}
+
+.dark .about-me-hr {
+  background-color: #f5f5f7;
+}
+
+
+.dark .navbar {
+border-bottom: 1px solid #343437;
+}
+
+.dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238,238,238, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
 }
 
 /* Media Queries */

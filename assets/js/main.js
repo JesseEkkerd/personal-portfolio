@@ -1,4 +1,4 @@
-// Navbar Scroll
+/* Navbar Scroll */
 document.addEventListener('DOMContentLoaded', function () {
   el_autohide = document.querySelector('.autohide');
 
@@ -20,4 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-// Navbar Scroll End
+/* Navbar Scroll End */
+
+/* Dark Mode Toggle */
+// Check OS Color Scheme Preference
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+if (prefersDarkScheme.matches) {
+  document.body.classList.add('dark');
+} else {
+  document.body.classList.remove('dark');
+}
+
+document.getElementById('lightSwitch').addEventListener('click', () => {
+  if (document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+  } else {
+    document.body.classList.add('dark');
+  }
+});
+/* Dark Mode Toggle End */

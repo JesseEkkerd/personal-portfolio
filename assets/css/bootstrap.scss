@@ -1,20 +1,63 @@
-
 $primary: #222831;
 $secondary: #393E46;
 $info: #00ADB5;
 $light: #EEEEEE;
-// $success:       green;
-// $warning:       yellow;
-// $danger:        red;
-// $dark:          gray-900;
+$success: #EEEEEE;
+// // $warning:       yellow;
+// // $danger:        red;
+// // $dark:          gray-900;
 
-// Color Pallet:
+// // ⬆ Insert custom bootstrap above ⬆.
 
-  // #222831
-  // #393E46
-  // #00ADB5
-  // #EEEEEE
-
-// ⬆ Insert custom bootstrap above ⬆.
+// // Color Pallet:
+//   // #222831
+//   // #393E46
+//   // #00ADB5
+//   // #EEEEEE
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+/* Dark Mode */
+.dark {
+
+  $enable-gradients: true;
+
+  /* Redefine theme colors for dark theme. */
+  $primary: #f5f5f7;
+  $secondary: #111111;
+  $success: #1d1d1f;
+  $dark: #000;
+
+
+  $theme-colors: ( 
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": #1b1b1d,
+    "danger": $danger,
+    "dark": $dark,
+    "light": #1d1d1f,
+  );
+
+  /* Redefine theme color variables. */
+  @each $color,
+  $value in $theme-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+
+  $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+  @each $color,
+  $value in $theme-colors-rgb {
+    --#{$variable-prefix}#{$color}-rgb: #{$value};
+  }
+
+  $body-color: #eeeeee;
+  $body-bg: #263C5C;
+
+  --#{$variable-prefix}body-color: #{$body-color};
+  --#{$variable-prefix}body-bg: #{$body-bg};
+}
+
+/* Dark Mode End */

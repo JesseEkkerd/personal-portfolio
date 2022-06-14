@@ -1,5 +1,5 @@
 #about {
-margin-top: 125px;
+  margin-top: 125px;
 }
 
 #home {
@@ -10,15 +10,27 @@ margin-top: 125px;
   max-width: 20%;
   height: auto;
 }
+
 .about-me-hr {
   background-color: #0000002a;
   height: 1px;
   margin-top: 15px;
 }
 
-
 .profile-picture {
   max-width: 75%;
+}
+
+/* Navbar Scroll */
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Media Queries */
@@ -27,9 +39,9 @@ margin-top: 125px;
   .contact-nav-btn {
     border: 0px solid !important;
   }
+
   .profile-picture {
     width: 40%;
-  }  
- 
   }
-  
+
+}

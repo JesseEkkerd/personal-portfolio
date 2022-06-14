@@ -10112,13 +10112,13 @@ textarea.form-control-lg {
   --bs-success: #1b1b1d;
   --bs-danger: #dc3545;
   --bs-dark: #000;
-  --bs-light: #1d1d1f;
+  --bs-light: #121212;
   --bs-primary-rgb: 245, 245, 247;
   --bs-secondary-rgb: 17, 17, 17;
   --bs-success-rgb: 27, 27, 29;
   --bs-danger-rgb: 220, 53, 69;
   --bs-dark-rgb: 0, 0, 0;
-  --bs-light-rgb: 29, 29, 31;
+  --bs-light-rgb: 18, 18, 18;
   --bs-body-color: #eeeeee;
   --bs-body-bg: #263C5C;
 }

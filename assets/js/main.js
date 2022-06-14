@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Navbar Scroll End */
 
 /* Dark Mode Toggle */
+
 // Check OS Color Scheme Preference
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 

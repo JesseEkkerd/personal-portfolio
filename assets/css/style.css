@@ -28,6 +28,10 @@
   box-shadow: none;
 }
 
+.wordpress-icon {
+content:url("https://s.w.org/style/images/about/WordPress-logotype-simplified.png")  
+
+}
 
 /* Navbar Scroll */
 

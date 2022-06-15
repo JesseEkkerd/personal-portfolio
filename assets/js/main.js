@@ -41,3 +41,11 @@ document.getElementById('lightSwitch').addEventListener('click', () => {
   }
 });
 /* Dark Mode Toggle End */
+
+/* Hamburger Animation */
+$(document).ready(function () {
+  $('.second-button').on('click', function () {
+    $('.animated-hamburger').toggleClass('open');
+  });
+});
+/* Hamburger Animation End */

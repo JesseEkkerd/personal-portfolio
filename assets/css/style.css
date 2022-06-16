@@ -1,25 +1,25 @@
-#about {
-  margin-top: 125px;
-}
-
 .about-icon {
   max-width: 20%;
   height: auto;
 }
 
-.about-me-hr {
-  background-color: #0000002a;
-  height: 1px;
-  margin-top: 20px;
-}
-
 /* Dark Mode Switch Slider */
-
 .form-check-input {
   margin-top: 5px;
 }
 
 /* Dark Mode Switch End */
+
+.hero-section {
+  margin-top: 5em;
+  margin-bottom: 10em;
+}
+
+.section-divider-hr {
+  background-color: #0000002a;
+  height: 1px;
+  margin-top: 20px;
+}
 
 .social-icon {
   transition: 0.1s all ease-in-out;
@@ -54,7 +54,7 @@
 
 body {
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+
 }
 
 /* Scrollbar */
@@ -101,7 +101,7 @@ body.dark .wordpress-icon {
   background-color: #009ba3;
 }
 
-.dark .about-me-hr {
+.dark .section-divider-hr {
   background-color: #f5f5f7;
 }
 
@@ -226,8 +226,9 @@ body.dark .wordpress-icon {
   left: 50%;
 }
 
-.about-list > ::marker {
-  color:#00adb5;
+/* Only color and font-size supported in Safari for ::marker */
+.about-list> ::marker {
+  color: #00adb5;
   content: "\f054";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;

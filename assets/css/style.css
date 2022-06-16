@@ -225,3 +225,11 @@ body.dark .wordpress-icon {
   width: 0%;
   left: 50%;
 }
+
+.about-list > ::marker {
+  color:#00adb5;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  padding-left: .5em;
+}

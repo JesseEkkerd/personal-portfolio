@@ -119,7 +119,7 @@ body.dark .wordpress-icon {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contact-nav-btn {
     border: 0px solid !important;
   }

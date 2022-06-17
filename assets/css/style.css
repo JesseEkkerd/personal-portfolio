@@ -1,3 +1,5 @@
+/* General */
+
 .about-icon {
   max-width: 20%;
   height: auto;
@@ -42,20 +44,14 @@
 
 .scrolled-down {
   transform: translateY(-100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .scrolled-up {
   transform: translateY(0);
-  transition: all 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
-/* General */
-
-body {
-  overflow-x: hidden;
-
-}
 
 /* Scrollbar */
 

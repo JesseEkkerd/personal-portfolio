@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 /* Navbar Scroll End */
 
-/* Dark Mode Toggle */
-
+/* Dark Mode*/
 // Check OS Color Scheme Preference
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -40,7 +39,7 @@ document.getElementById('lightSwitch').addEventListener('click', () => {
     document.body.classList.add('dark');
   }
 });
-/* Dark Mode Toggle End */
+/* Dark Mode End*/
 
 /* Hamburger Animation */
 $(document).ready(function () {

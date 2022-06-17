@@ -71,7 +71,8 @@
       <div class="row justify-content-center align-items-center hero-section">
         <div class="col-md-6">
           <div class="home-img">
-            <img class="img-fluid d-none d-md-block p-5" src="assets/img/profile-picture.png" alt="profile picture">
+            <img class="img-fluid d-none d-md-block profile-picture" src="assets/img/profile-picture.png"
+              alt="profile picture">
           </div>
         </div>
         <div class="col-md-6 order-md-first pt-5">
@@ -102,7 +103,8 @@
         </div>
         <div class="col-md-6">
           <div class="home-img mt-5 mb-5">
-            <img class="img-fluid  d-block d-md-none" src="assets/img/profile-picture.png" alt="profile picture">
+            <img class="img-fluid d-block d-md-none profile-picture" src="assets/img/profile-picture.png"
+              alt="profile picture">
           </div>
         </div>
       </div>
@@ -111,7 +113,7 @@
   <!-- Home Section End -->
 
   <!-- About Section -->
-  <section class="about bg-light px-3 fade-in pb-5" id="about">
+  <section class="about bg-light px-3 fade-in" id="about">
     <div class="container-lg">
       <div class="row mb-3">
         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2 mb-3">
@@ -159,7 +161,7 @@
   <!-- About Section End -->
 
   <!-- Portfolio Section -->
-  <section class="about bg-light px-3 pt-sm-5 mt-5 pt-5 pb-5 fade-in" id="portfolio">
+  <section class="about bg-light px-3 fade-in" id="portfolio">
     <div class="container-lg">
       <div class="row mb-3">
         <div class="col-7 col-sm-5 col-md-4 col-lg-4 col-xl-3 mb-3">
@@ -220,7 +222,7 @@
   <!-- Testimonials Section -->
   <section class="about bg-light px-3 pt-sm-5 mt-5 pt-5 fade-in" id="testimonials">
     <div class="container-lg">
-      <div class="row mb-3">
+      <div class="row mb-5 pb-5">
         <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 mb-3">
           <div class="section-title">
             <h2 class="section text-info">Testimonials</h2>
@@ -239,9 +241,9 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner shadow-lg">
               <!-- Testimonial Item -->
-              <div class="testimonial-item carousel-item active bg-danger shadow-sm rounded" data-bs-interval="9000">
+              <div class="testimonial-item carousel-item active bg-danger shadow-sm rounded" data-bs-interval="11000">
                 <div class="testimonial-author-info d-flex">
                   <img src="assets/img/testimonials/mike.png" class="img-thumbnail rounded-circle testimonial-author"
                     alt="testimonial author">
@@ -257,7 +259,7 @@
               </div>
               <!-- Testimonial Item End -->
               <!-- Testimonial Item -->
-              <div class="testimonial-item carousel-item bg-danger shadow-sm rounded" data-bs-interval="7000">
+              <div class="testimonial-item carousel-item bg-danger shadow-sm rounded" data-bs-interval="9000">
                 <div class="testimonial-author-info d-flex">
                   <img src="assets/img/testimonials/jonny.jpg" class="img-thumbnail rounded-circle testimonial-author"
                     alt="testimonial author">
@@ -273,7 +275,7 @@
               </div>
               <!-- Testimonial Item End -->
               <!-- Testimonial Item -->
-              <div class="testimonial-item carousel-item bg-danger shadow-sm rounded" data-bs-interval="7000">
+              <div class="testimonial-item carousel-item bg-danger shadow-sm rounded" data-bs-interval="9000">
                 <div class="testimonial-author-info d-flex">
                   <img src="assets/img/testimonials/elena.png" class="img-thumbnail rounded-circle testimonial-author"
                     alt="testimonial author">
@@ -306,7 +308,7 @@
   <!-- Testimonials Section End -->
 
   <!-- Contact Section -->
-  <section class="about bg-light carousel-item px-3 pt-5 mt-5 fade-in" id="contact">
+  <section class="about bg-light px-3 pt-5 mt-5 fade-in" id="contact">
     <div class="container-lg">
       <div class="row mb-3">
         <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 mb-3">
@@ -316,44 +318,80 @@
         </div>
         <div class="col-5 col-sm-7 col-md-8 col-lg-9 col-xl-9 section-divider-hr"></div>
       </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-md-5">
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4 text-info">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Email</h3>
+              <p class="text-muted">jesseekkerd@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4 text-info">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Phone</h3>
+              <p class="text-muted">+27815744114</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="contact-form">
+            <form action="https://formsubmit.co/jesseekkerd@gmail.com" method="POST">
+              <div class="row">
+                <div class="col-lg-6 mb-4">
+                  <input type="text" placeholder="Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <input type="email" name="email" placeholder="Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                </div> 
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mb-4">
+                  <input type="text" name="_subject" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mb-4">
+                  <textarea rows="5" placeholder="Message"
+                    class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-lg-12"><button type="submit" class="btn btn-info px-3">Send Message</button></div>
+            </div>
+            <input type="text" name="_honey" style="display:none">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Contact Section End -->
 
-  <!-- Placeholder padding sections. -->
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
-  <section class="py-5"></section>
+  <!-- Footer -->
+  <footer class="footer py-4 bg-success shadow ">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="m-0 text-center text-muted">&copy; 2022 Jesse Ekkerd</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-</body>
-
-<!-- Main JS -->
-<script src="assets/js/main.js"></script>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
 </html>

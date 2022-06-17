@@ -1,4 +1,24 @@
 /* General */
+#about {
+  margin-bottom: 20vh;
+}
+
+#contact {
+  margin-bottom: 20vh;
+}
+
+#home {
+  margin-bottom: 25vh;
+  margin-top: 10vh;
+}
+
+#portfolio {
+  margin-bottom: 15vh;
+}
+
+#testimonials {
+  margin-bottom: 20vh;
+}
 
 body {
   transition: all 0.3s ease-in !important;
@@ -15,11 +35,11 @@ body {
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adb5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
- }
- 
- .carousel-control-next-icon {
-   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adb5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
- }
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adb5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 
 .carousel-control-next {
   padding-left: 6em;
@@ -38,8 +58,11 @@ body {
 .form-check-input {
   margin-top: 5px;
 }
-
 /* Dark Mode Switch End */
+
+.footer {
+  border-top: 1px solid #f5f5f7;
+}
 
 .hero-section {
   margin-top: 5em;
@@ -134,6 +157,10 @@ body.dark .wordpress-icon {
   background-color: #009ba3;
 }
 
+.dark .footer {
+  border-top: 1px solid #343437;
+}
+
 .dark .section-divider-hr {
   background-color: #f5f5f7;
 }
@@ -169,51 +196,70 @@ body.dark .wordpress-icon {
   .carousel-control-next {
     padding-left: 4em;
   }
-  
+
   .carousel-control-prev {
     padding-right: 4em;
   }
-  
+
+  .carousel-item {
+    padding: 1em 2em;
+  }
+
 }
+@media (max-width: 400px){
+.carousel-item {
+  padding: 1em;
+}
+}
+
 @media (max-width: 767px) {
   .carousel-control-next {
     padding-left: 2em;
   }
-  
+
   .carousel-control-prev {
     padding-right: 2em;
   }
+  
+  .carousel-item {
+    padding: 3em;
+  }
 }
 
-@media (min-width: 767px) and (max-width: 992px){
+@media (min-width: 767px) and (max-width: 992px) {
   .carousel-control-next {
     padding-left: 4em;
   }
-  
+
   .carousel-control-prev {
     padding-right: 4em;
   }
+  
+  .carousel-item {
+    padding: 3em;
+  }
 }
 
-@media (min-width: 1200px) and (max-width: 1400px){
+@media (min-width: 1200px) and (max-width: 1400px) {
   .carousel-control-next {
     padding-left: 7em;
   }
-  
+
   .carousel-control-prev {
     padding-right: 7em;
   }
 }
 
-@media (min-width: 1400px){
+@media (min-width: 1400px) {
   .carousel-control-next {
     padding-left: 8em;
   }
-  
+
   .carousel-control-prev {
     padding-right: 8em;
   }
 }
+
 /* Hamburger Menu */
 
 .navbar-toggler:focus,

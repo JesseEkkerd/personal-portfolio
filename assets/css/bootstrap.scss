@@ -3,10 +3,7 @@ $secondary: #393E46;
 $info: #00adb5;
 $light: #EEEEEE;
 $success: #EEEEEE;
-$danger: #eaeaea;
-// // $warning:       yellow;
-// // $dark:          gray-900;
-
+$danger: #dedede;
 
 /* 
 Light Color Pallet:
@@ -36,8 +33,7 @@ Dark Color Pallet:
   $dark: #000;
 
 
-  $theme-colors: (
-    "primary": $primary,
+  $theme-colors: ("primary": $primary,
     "secondary": $secondary,
     "success": #1b1b1d,
     "danger": #1b1b1d,
@@ -64,4 +60,5 @@ Dark Color Pallet:
   --#{$variable-prefix}body-color: #{$body-color};
   --#{$variable-prefix}body-bg: #{$body-bg};
 }
+
 /* Dark Mode End */

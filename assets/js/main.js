@@ -72,8 +72,8 @@ const appearOnScroll = new IntersectionObserver(function (
 },
 appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
-})
+});
 
 /* Fade on Scroll End */

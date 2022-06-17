@@ -1,10 +1,10 @@
 $primary: #222831;
 $secondary: #393E46;
-$info: #00ADB5;
+$info: #00adb5;
 $light: #EEEEEE;
 $success: #EEEEEE;
+$danger: #eaeaea;
 // // $warning:       yellow;
-// // $danger:        red;
 // // $dark:          gray-900;
 
 
@@ -32,7 +32,7 @@ Dark Color Pallet:
   /* Redefine theme colors for dark theme. */
   $primary: #f5f5f7;
   $secondary: #111111;
-  $success: #1d1d1f;
+  $success: #1d1d1d;
   $dark: #000;
 
 
@@ -40,8 +40,8 @@ Dark Color Pallet:
     "primary": $primary,
     "secondary": $secondary,
     "success": #1b1b1d,
-    "danger": $danger,
-    "dark": $dark,
+    "danger": #1b1b1d,
+    "dark": #000,
     "light": #121212,
   );
 

@@ -1,8 +1,37 @@
 /* General */
 
+body {
+  transition: all 0.3s ease-in !important;
+}
+
 .about-icon {
   max-width: 20%;
   height: auto;
+}
+
+.author-subtitle {
+  font-size: 1rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adb5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adb5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+.carousel-control-next {
+  padding-left: 6em;
+}
+
+.carousel-control-prev {
+  padding-right: 6em;
+}
+
+.carousel-item {
+  padding: 2em 3em;
+
 }
 
 /* Dark Mode Switch Slider */
@@ -15,6 +44,10 @@
 .hero-section {
   margin-top: 5em;
   margin-bottom: 10em;
+}
+
+.navbar {
+  transition: all 0.3s ease-in !important;
 }
 
 .section-divider-hr {
@@ -36,6 +69,10 @@
   text-align: center;
 }
 
+.testimonial-author {
+  height: 5em;
+}
+
 .wordpress-icon {
   content: url("https://s.w.org/style/images/about/WordPress-logotype-simplified.png")
 }
@@ -44,12 +81,12 @@
 
 .scrolled-down {
   transform: translateY(-100%);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .scrolled-up {
   transform: translateY(0);
-  transition: 0.1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -129,8 +166,54 @@ body.dark .wordpress-icon {
     text-align: center;
   }
 
+  .carousel-control-next {
+    padding-left: 4em;
+  }
+  
+  .carousel-control-prev {
+    padding-right: 4em;
+  }
+  
+}
+@media (max-width: 767px) {
+  .carousel-control-next {
+    padding-left: 2em;
+  }
+  
+  .carousel-control-prev {
+    padding-right: 2em;
+  }
 }
 
+@media (min-width: 767px) and (max-width: 992px){
+  .carousel-control-next {
+    padding-left: 4em;
+  }
+  
+  .carousel-control-prev {
+    padding-right: 4em;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  .carousel-control-next {
+    padding-left: 7em;
+  }
+  
+  .carousel-control-prev {
+    padding-right: 7em;
+  }
+}
+
+@media (min-width: 1400px){
+  .carousel-control-next {
+    padding-left: 8em;
+  }
+  
+  .carousel-control-prev {
+    padding-right: 8em;
+  }
+}
 /* Hamburger Menu */
 
 .navbar-toggler:focus,
@@ -229,4 +312,15 @@ body.dark .wordpress-icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   padding-left: .5em;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .3s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
 }

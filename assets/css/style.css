@@ -54,6 +54,10 @@ body {
 
 }
 
+.dancing-gif {
+width: 40%;
+}
+
 /* Dark Mode Switch Slider */
 .form-check-input {
   margin-top: 5px;
@@ -95,6 +99,10 @@ body {
 
 .testimonial-author {
   height: 5em;
+}
+
+.thank-you {
+  font-size: 7em;
 }
 
 .wordpress-icon {

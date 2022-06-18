@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jesse Ekkerd</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -44,19 +45,19 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-2">
-            <a href="#home" class="nav-link text-primary">Home</a>
+            <a href="#home" class="nav-btn nav-link text-primary border border-info rounded my-2">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="#about" class="nav-link text-primary">About</a>
+            <a href="#about" class="nav-btn nav-link text-primary border border-info rounded my-2">About</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="#portfolio" class="nav-link text-primary">Portfolio</a>
+            <a href="#portfolio" class="nav-btn nav-link text-primary border border-info rounded my-2">Portfolio</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="#testimonials" class="nav-link text-primary">Testimonials</a>
+            <a href="#testimonials" class="nav-btn nav-link text-primary border border-info rounded my-2 px-2">Testimonials</a>
           </li>
-          <li class="nav-item mx-2">
-            <a href="#contact" class="contact-nav-btn nav-link text-primary border border-info rounded">Contact</a>
+          <li class="nav-item mx-2 me-sm-0">
+            <a href="#contact" class="contact-nav-btn nav-link text-primary border border-info rounded my-2">Contact</a>
           </li>
         </ul>
       </div> <!-- navbar-collapse -->
@@ -145,11 +146,11 @@
         </div>
         <div class="col-md-6">
           <div class="row mx-0 justify-content-center">
-            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/javascript-logo.png"></img>
-            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/typescript-logo.png"></img>
-            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/react-logo.png"></img>
-            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/node-logo.png"></img>
-            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/bootstrap-logo.png"></img>
+            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/about/javascript-logo.png"></img>
+            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/about/typescript-logo.png"></img>
+            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/about/react-logo.png"></img>
+            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/about/node-logo.png"></img>
+            <img class="col-4 mx-3 mx-sm-4 my-4 about-icon" src="assets/img/about/bootstrap-logo.png"></img>
             <img class="col-4 mx-3 mx-sm-4 my-4 about-icon wordpress-icon"></img>
           </div>
         </div>
@@ -176,7 +177,7 @@
         <div class="col-md-6 col-lg-4 mb-5">
           <div class="portfolio-item"></div>
           <a href="https://staging2.flightsimcoach.com/boeing-737-course/" target="_blank"
-            rel="noopener noreferrer"><img src="assets/img/portfolio/item1.png" class="w-100 img-thumbnail mb-3"
+            rel="noopener noreferrer"><img src="assets/img/portfolio/item1.png" class="w-100 img-thumbnail mb-3 shadow"
               alt="portfolio item 1"></a>
           <a href="https://staging2.flightsimcoach.com/boeing-737-course/" target="_blank" rel="noopener noreferrer"
             class="text-decoration-none">
@@ -189,9 +190,9 @@
         </div>
         <!-- Item 2 -->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="portfolio-item "></div>
+          <div class="portfolio-item"></div>
           <a href="https://flightsimcoach.com/flight-instructors/chambers/" target="_blank"
-            rel="noopener noreferrer"><img src="assets/img/portfolio/item3.png" class="w-100 img-thumbnail mb-3"
+            rel="noopener noreferrer"><img src="assets/img/portfolio/item3.png" class="w-100 img-thumbnail mb-3 shadow"
               alt="portfolio item 2"></a>
           <a href="https://flightsimcoach.com/flight-instructors/chambers/" target="_blank" rel="noopener noreferrer"
             class="text-decoration-none">
@@ -204,9 +205,10 @@
         </div>
         <!-- Item 3 -->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="portfolio-item "></div>
+          <div class="portfolio-item"></div>
           <a href="https://flightsimcoach.com/" target="_blank" rel="noopener noreferrer"><img
-              src="assets/img/portfolio/item2.png" class="w-100 img-thumbnail mb-3" alt="portfolio item 3"></a>
+              src="assets/img/portfolio/item2.png" class="w-100 img-thumbnail mb-3 shadow shadow"
+              alt="portfolio item 3"></a>
           <a href="https://flightsimcoach.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
             <h3 class="fs-3 text-primary text-decoration-none">Flight Sim Coach Landing Page</h3>
           </a>
@@ -231,7 +233,7 @@
         <div class="col-5 col-sm-7 col-md-8 col-lg-9 col-xl-9 section-divider-hr"></div>
       </div>
       <div class="row justify-content-center mt-5">
-        <div class="col col-sm-10">
+        <div class="col col-md-10">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -252,7 +254,7 @@
                     <p class="text-muted m-0 author-subtitle ">Founder and CEO, Flight Sim Coach LLC</p>
                   </div>
                 </div>
-                <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod laboriosam molestiae
+                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod laboriosam molestiae
                   sit
                   nisi ipsa
                   harum, sequi animi velit doloremque.</p>
@@ -261,14 +263,14 @@
               <!-- Testimonial Item -->
               <div class="testimonial-item carousel-item bg-danger shadow-sm rounded" data-bs-interval="9000">
                 <div class="testimonial-author-info d-flex">
-                  <img src="assets/img/testimonials/jonny.jpg" class="img-thumbnail rounded-circle testimonial-author"
+                  <img src="assets/img/testimonials/jonny.png" class="img-thumbnail rounded-circle testimonial-author"
                     alt="testimonial author">
                   <div class="author ms-3">
                     <h3 class="fs-3 mb-1 mt-2 text-info">Jonathan Rees</h3>
-                    <p class="text-muted m-0 author-subtitle">Junior Software Developer, Yellowtail Software</p>
+                    <p class="text-muted m-0 author-subtitle">Software Developer, Yellowtail Software</p>
                   </div>
                 </div>
-                <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod laboriosam molestiae
+                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod laboriosam molestiae
                   sit
                   nisi ipsa
                   harum, sequi animi velit doloremque.</p>
@@ -284,7 +286,7 @@
                     <p class="text-muted m-0 author-subtitle">Office Manager, Momentum Financial Planning</p>
                   </div>
                 </div>
-                <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod laboriosam molestiae
+                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod laboriosam molestiae
                   sit
                   nisi ipsa
                   harum, sequi animi velit doloremque.</p>
@@ -318,58 +320,62 @@
         </div>
         <div class="col-5 col-sm-7 col-md-8 col-lg-9 col-xl-9 section-divider-hr"></div>
       </div>
-      <div class="row mt-5 pt-5">
-        <div class="col-md-5">
-          <div class="contact-item d-flex mb-3">
-            <div class="icon fs-4 text-info">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="text ms-3">
-              <h3 class="fs-5">Email</h3>
-              <p class="text-muted">jesseekkerd@gmail.com</p>
-            </div>
+      <div class="row mt-5 align-items-center justify-content-center">
+          <div class="contact-text mb-0 mb-sm-2 col col-sm-10">
+            <h4 class="text-center pb-3">I am currently looking for new opportunities, and I'd love to hear from you.</h4>
+            <h4 class="text-center">Feel free to send a message using the form below, or contact me directly!</h4>
           </div>
-          <div class="contact-item d-flex mb-3">
-            <div class="icon fs-4 text-info">
-              <i class="fas fa-phone"></i>
+          </div>
+          <div class="row mt-5 pt-5">
+            <div class="col-md-5">
+              <div class="contact-item d-flex mb-3">
+                <div class="icon fs-4 text-info">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="text ms-3 pt-1">
+                  <h3 class="fs-5">Email</h3>
+                  <p class="text-muted">jesseekkerd@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item d-flex mb-3">
+                <div class="icon fs-4 text-info">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text ms-3 pt-1">
+                  <h3 class="fs-5">Phone</h3>
+                  <p class="text-muted">+27815744114</p>
+                </div>
+              </div>
             </div>
-            <div class="text ms-3">
-              <h3 class="fs-5">Phone</h3>
-              <p class="text-muted">+27815744114</p>
+            <div class="col-md-7">
+              <div class="contact-form">
+                <form action="https://formsubmit.co/jesseekkerd@gmail.com" method="POST">
+                  <div class="row">
+                    <div class="col-lg-6 mb-4">
+                      <input type="text" name="name" placeholder="Name"
+                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <input type="email" name="email" placeholder="Email"
+                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mb-4">
+                      <textarea rows="5" name="message" placeholder="Message"
+                        class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12"><button type="submit" class="btn btn-info text-white px-3">Send Message</button></div>
+                  </div>
+                  <input type="text" name="_honey" style="display:none">
+                  <input type="hidden" name="_subject" value="New submission!">
+                </form>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-7">
-          <div class="contact-form">
-            <form action="https://formsubmit.co/jesseekkerd@gmail.com" method="POST">
-              <div class="row">
-                <div class="col-lg-6 mb-4">
-                  <input type="text" placeholder="Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <input type="email" name="email" placeholder="Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
-                </div> 
-              </div>
-              <div class="row">
-                <div class="col-lg-12 mb-4">
-                  <input type="text" name="_subject" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 mb-4">
-                  <textarea rows="5" placeholder="Message"
-                    class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-                </div>
-              </div>
-            <div class="row">
-              <div class="col-lg-12"><button type="submit" class="btn btn-info px-3">Send Message</button></div>
-            </div>
-            <input type="text" name="_honey" style="display:none">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
   <!-- Contact Section End -->
 

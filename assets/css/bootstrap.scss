@@ -33,7 +33,8 @@ Dark Color Pallet:
   $dark: #000;
 
 
-  $theme-colors: ("primary": $primary,
+  $theme-colors: (
+    "primary": $primary,
     "secondary": $secondary,
     "success": #1b1b1d,
     "danger": #1b1b1d,

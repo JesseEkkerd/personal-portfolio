@@ -53,8 +53,7 @@ $(document).ready(function () {
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
-  threshold: 0.5,
-  // rootMargin: "0px 0px 60px 0px"
+  threshold: 0.2,
 };
 
 const appearOnScroll = new IntersectionObserver(function (

@@ -1,25 +1,4 @@
 /* General */
-#about {
-  margin-bottom: 20vh;
-}
-
-#contact {
-  margin-bottom: 20vh;
-}
-
-#home {
-  margin-bottom: 25vh;
-  margin-top: 10vh;
-}
-
-#portfolio {
-  margin-bottom: 15vh;
-}
-
-#testimonials {
-  margin-bottom: 20vh;
-}
-
 body {
   transition: all 0.3s ease-in !important;
 }
@@ -53,15 +32,16 @@ body {
   padding: 2em 3em;
 }
 
-.dancing-gif {
-
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .3s ease-in;
 }
 
-/* Dark Mode Switch Slider */
-.form-check-input {
-  margin-top: 5px;
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
-/* Dark Mode Switch End */
 
 .footer {
   border-top: 1px solid #f5f5f7;
@@ -119,7 +99,7 @@ body {
   transform: translateY(0);
   transition: 0.3s ease-in-out;
 }
-
+/* Navbar Scroll End */
 
 /* Scrollbar */
 
@@ -146,6 +126,7 @@ body {
     scrollbar-width: thin;
   }
 }
+/* Scrollbar End */
 
 /* Dark Mode */
 
@@ -169,6 +150,12 @@ body.dark .wordpress-icon {
   border-top: 1px solid #343437;
 }
 
+/* Dark Mode Switch Slider */
+.form-check-input {
+  margin-top: 5px;
+}
+/* Dark Mode Switch Slider End */
+
 .dark .section-divider-hr {
   background-color: #f5f5f7;
 }
@@ -184,93 +171,7 @@ body.dark .wordpress-icon {
 .dark .social-icon:hover {
   color: #00adb5;
 }
-
-/* Media Queries */
-
-@media (max-width: 767px) {
-  
-  .carousel-control-next {
-    padding-left: 2em;
-  }
-
-  .carousel-control-prev {
-    padding-right: 2em;
-  }
-  
-  .carousel-item {
-    padding: 3em;
-  }
-
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-  }
-
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
-
-  .carousel-control-next {
-    padding-left: 4em;
-  }
-
-  .carousel-control-prev {
-    padding-right: 4em;
-  }
-
-  .carousel-item {
-    padding: 1em 2em;
-  }
-
-}
-
-@media (max-width: 400px){
-.carousel-item {
-  padding: 1em;
-}
-}
-
-@media (min-width: 767px) {
-  .nav-btn {
-    border: 0px solid !important;
-  }
-}
-
-
-@media (min-width: 767px) and (max-width: 992px) {
-  .carousel-control-next {
-    padding-left: 4em;
-  }
-
-  .carousel-control-prev {
-    padding-right: 4em;
-  }
-  
-  .carousel-item {
-    padding: 3em;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .carousel-control-next {
-    padding-left: 7em;
-  }
-
-  .carousel-control-prev {
-    padding-right: 7em;
-  }
-}
-
-@media (min-width: 1400px) {
-  .carousel-control-next {
-    padding-left: 8em;
-  }
-
-  .carousel-control-prev {
-    padding-right: 8em;
-  }
-}
-
+/* Dark Mode End */
 /* Hamburger Menu */
 
 .navbar-toggler:focus,
@@ -361,6 +262,7 @@ body.dark .wordpress-icon {
   width: 0%;
   left: 50%;
 }
+/* Hamburger Menu End */
 
 /* Only color and font-size supported in Safari for ::marker */
 .about-list> ::marker {
@@ -371,13 +273,110 @@ body.dark .wordpress-icon {
   padding-left: .5em;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all .3s ease-in;
+/* Media Queries */
+
+@media (max-width: 767px) {
+  
+  .carousel-control-next {
+    padding-left: 2em;
+  }
+
+  .carousel-control-prev {
+    padding-right: 2em;
+  }
+  
+  .carousel-item {
+    padding: 3em;
+  }
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .carousel-control-next {
+    padding-left: 4em;
+  }
+
+  .carousel-control-prev {
+    padding-right: 4em;
+  }
+
+  .carousel-item {
+    padding: 1em 2em;
+  }
+
 }
 
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0);
+@media (max-width: 400px){
+.carousel-item {
+  padding: 1em;
+}
+}
+
+@media (min-width: 767px) {
+  .nav-btn {
+    border: 0px solid !important;
+  }
+}
+
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .carousel-control-next {
+    padding-left: 4em;
+  }
+
+  .carousel-control-prev {
+    padding-right: 4em;
+  }
+  
+  .carousel-item {
+    padding: 3em;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .carousel-control-next {
+    padding-left: 7em;
+  }
+
+  .carousel-control-prev {
+    padding-right: 7em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carousel-control-next {
+    padding-left: 8em;
+  }
+
+  .carousel-control-prev {
+    padding-right: 8em;
+  }
+}
+/* Media Queries End */
+
+#about {
+  margin-bottom: 20vh;
+}
+
+#contact {
+  margin-bottom: 20vh;
+}
+
+#home {
+  margin-bottom: 25vh;
+  margin-top: 10vh;
+}
+
+#portfolio {
+  margin-bottom: 15vh;
+}
+
+#testimonials {
+  margin-bottom: 20vh;
 }
